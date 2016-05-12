@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center|center_vertical"
+    >
+    <TextView
+        android:id="@+id/logged_in_user"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    
+	<TextView
+  	  android:id="@+id/lbl_enter"
+   	 android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+   	 android:text="Enter Search Word" />
+
+	<EditText
+  	  android:id="@+id/txt_search_key"
+   	 android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:singleLine="true"
+    	android:text="" >
+
+	</EditText>
+
+	<Button
+  	  android:id="@+id/btn_search"
+  	  android:layout_width="wrap_content"
+  	  android:layout_height="wrap_content"
+  	  android:text="Search"
+  	  android:onClick="search_click"
+  	   >
+
+	</Button>
+	  
+	
+   		<Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/category_arrays"
+        android:prompt="@string/category_prompt" />
+	
+	
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center|center_vertical"
+    >
+
+<ListView
+    android:id="@android:id/list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+</ListView>
+    <TextView
+      android:id="@android:id/empty"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="  " />
+
+</LinearLayout>
+</LinearLayout>

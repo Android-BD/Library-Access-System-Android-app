@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobilelibraryapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity android:name=".LoginActivity"
+                  android:label="@string/app_name">
+                  	<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+		<activity android:name=".UserPage"
+                  android:label="@string/app_name" />
+		<activity android:name=".SearchbyISBNActivity"
+             	   android:label="@string/app_name"/>
+		<activity android:name=".MainActivity"
+                  android:label="@string/app_name" >
+       </activity>
+         <activity android:name=".RegisterActivity"
+              android:label="@string/app_name" />
+         <activity android:name=".RegisterSuccess"
+             android:label="@string/app_name" />
+         <activity android:name=".ReservationActivity"
+                  android:label="@string/app_name" />
+         <activity android:name=".ReservationSuccess"
+                  android:label="@string/app_name" />
+         <activity 
+            android:name=".ScanSearch"
+        	android:label="@string/search_label"></activity>
+         <activity android:name="jim.h.common.android.zxinglib.CaptureActivity"
+			android:screenOrientation="landscape" android:configChanges="orientation|keyboardHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:windowSoftInputMode="stateAlwaysHidden" />
+         
+         <activity
+         	android:name=".myaccount"
+        	android:label="@string/mymenu_label"></activity>
+         <activity 
+            android:name=".mytabs"
+        	android:label="@string/mymenu_label"></activity>
+        <activity 
+            android:name=".myremainders"
+        	android:label="@string/mymenu_label"></activity>
+         <activity 
+            android:name=".mysearchmain"
+        	android:label="@string/search_label"></activity>
+         <activity android:name=".RenewBook"
+                  android:label="@string/app_name" />
+         <activity 
+            android:name=".BooksBorrowed"
+        	android:label="@string/mymenu_label"></activity>
+         
+         <activity 
+            android:name=".detailsPage"
+        	android:label="@string/mymenu_label"></activity>
+         
+         
+         <activity 
+            android:name=".detailBorrow"
+        	android:label="@string/mymenu_label"></activity>
+            <activity 
+            android:name=".NewScanDirect"
+        	android:label="@string/mymenu_label"></activity>
+    </application>
+        
+        
+        
+
+</manifest>

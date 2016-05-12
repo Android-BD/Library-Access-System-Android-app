@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+	
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="83dp"
+    android:src="@drawable/ic_launcher" />
+	
+<TableLayout 
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+ <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+<TextView
+            android:id="@+id/bookName_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+</TableRow>
+
+<TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dip" >
+    		
+        <TextView
+            android:id="@+id/bookID_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/Status_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+		</TableRow>
+		<TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dip" >
+    
+		
+           <TextView
+            android:id="@+id/isbn_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="isbn" />
+
+        </TableRow>
+<TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+        android:padding="5dip" >
+        
+		
+        <TextView
+            android:id="@+id/Author_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+		
+</TableRow>
+</TableLayout>
+<Button
+    android:layout_weight="1"
+            android:id="@+id/btn_reser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+			android:visibility="invisible"
+             />
+
+<Button
+    android:id="@+id/btn_reserve"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="reserve_click"
+    android:text="@string/btn_SEARCH_details" />
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  
+      android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+     android:orientation="horizontal"
+   android:padding="10sp">
+
+     <TextView
+            android:id="@+id/resultNum_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+        
+           <TextView
+               android:id="@+id/isbn_r"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="TextView" />
+
+        <TextView
+            android:id="@+id/bookName_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/Author_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+
+        <Button
+            android:id="@+id/btn_renew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Renew" />
+
+</LinearLayout>

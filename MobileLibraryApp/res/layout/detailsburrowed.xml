@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layour"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+<TableLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dip" >
+
+<TableRow>
+   <TextView android:id="@+id/lbl_DB_bookName"
+       android:text="BookName"
+       ></TextView>"
+<TextView
+        android:id="@+id/txt_DB_bookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</TableRow>
+<TableRow>
+       <TextView android:id="@+id/lbl_DB_bookAuthor"
+       android:text="Author"
+       ></TextView>
+    <TextView
+        android:id="@+id/txt_BD_bookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</TableRow>
+<TableRow>
+       <TextView 
+          android:id="@+id/lbl_DB_isbn"
+       	  android:text="ISBN"
+      />
+    <TextView
+        android:id="@+id/txt_DB_isbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</TableRow>
+<TableRow>
+       <TextView android:id="@+id/lbl_DB_bookDesc"
+       android:text="Description"
+       ></TextView>
+    <TextView
+        android:id="@+id/txt_DB_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</TableRow>
+<TableRow>
+       <TextView android:id="@+id/lbl_DB_DueDate"
+       android:text="BookName"
+       ></TextView>
+    <TextView
+        android:id="@+id/txt_DB_Duedate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DueDate" />
+</TableRow>
+<TableRow> 
+       <TextView 
+        android:id="@+id/lbl_DB_ResrvedDate"
+       android:text="ReservationDate"
+       />
+<TextView
+        android:id="@+id/txt_DB_IssueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issue DAte" />
+
+ </TableRow>
+<TableRow>
+<TextView
+    android:id="@+id/lbl_DB_fine"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Fine" />
+
+<TextView
+    android:id="@+id/txt_DB_Fine"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/EmptyStr" />
+</TableRow>
+</TableLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btn_details_reserve_Click"
+        android:text="Renew" />
+
+    
+</LinearLayout>

@@ -1,0 +1,11 @@
+CREATE TRIGGER `TrigDueDate` BEFORE INSERT ON  `reservedbooks` 
+FOR EACH
+ROW SET New.Due_date = DATEADD(
+DAY ,
+10,
+NEW.Reserved_date
+);
+
+
+
+CREATE TRIGGER `renewCount` BEFORE UPDATE ON  `reservedbooks` FOR EACH ROW SET NEW.Available_renew = Available.renew -1;

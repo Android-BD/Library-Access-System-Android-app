@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center|center_vertical"
+    >
+<TextView 
+	android:id="@+id/reservation_textview_for_title"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Reservation"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:textStyle="bold"
+    />
+<TextView 
+	android:id="@+id/reservation_textview_for_userid"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Userid"
+    />
+<EditText 
+	android:text="" 
+	android:id="@+id/reservation_edittext_for_userid" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:singleLine="true">
+</EditText>
+<TextView 
+	android:id="@+id/reservation_textview_for_bookid"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Bookid"
+    />
+<EditText 
+	android:text="" 
+	android:id="@+id/reservation_editext_for_bookid" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:singleLine="true">
+</EditText>
+<TextView 
+	android:id="@+id/reservation_textview_for_reservedby"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Reserved By"
+    />
+<EditText 
+	android:text="" 
+	android:id="@+id/reservation_edittext_for_reservedby" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:singleLine="true">
+</EditText>
+<Button 
+	android:text="Reserve" 
+	android:id="@+id/reservation_button_for_reserve" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+</Button>
+<ScrollView android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+<TextView 
+	android:id="@+id/reservation_textview_for_response"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text=""
+    />
+</ScrollView>
+</LinearLayout>

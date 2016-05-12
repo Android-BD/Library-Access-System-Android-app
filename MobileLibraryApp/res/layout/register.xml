@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center|center_vertical"
+    android:background="@drawable/loginbackgroud"
+    android:padding="25dip"
+    >
+<TextView 
+android:id="@+id/tv0"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Create Login Account To Library"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:textStyle="bold"
+    />
+<TextView 
+android:id="@+id/tv1"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Username"
+    />
+
+<EditText
+    android:id="@+id/txt_REG_username"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/login_editText"
+    android:singleLine="true"
+    android:text="" >
+
+</EditText>
+<TextView 
+android:id="@+id/tv2"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Password"
+    />
+
+<EditText
+    android:id="@+id/edtxt_REG_password"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/login_editText"
+    android:singleLine="true"
+    android:text="" >
+
+</EditText>
+<TextView 
+android:id="@+id/tv3"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Email"
+    />
+
+<EditText
+    android:id="@+id/edtxt_REG_email"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:text="" >
+
+</EditText>
+
+<Button
+    android:id="@+id/btn_REG_register"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/login_button"
+    android:text="Register" >
+
+</Button>
+
+<ScrollView
+    android:id="@+id/txt_REG_conformation"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<TextView 
+android:id="@+id/rtv"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text=""
+    />
+</ScrollView>
+</LinearLayout>
+
+
